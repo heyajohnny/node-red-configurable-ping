@@ -8,8 +8,9 @@
   },
   "keywords": [
     "node-red",
+    "node-red-ping",
     "node-red-configurable",
-    "contrib",
+    "nodered ping",
     "ping"
   ],
   "node-red": {
