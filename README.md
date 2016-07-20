@@ -1,15 +1,15 @@
-# node-red-contrib-advanced-ping
+# node-red-configurable-ping
 
 A <a href="http://nodered.org" target="_new">Node-RED</a> node which takes input and pings a remote server.
 
-This is a modification of the [node-red-node-ping](https://github.com/node-red/node-red-nodes/tree/master/io/ping) node. Difference is that this node **will perform a ping when it recieves input** where the node-red-node-ping node performs pings on a set interval. You may also programmatically pass ping settings to this node. For periodical checks, wire an inject node to this ping node.
+This is a modification of the [node-red-contrib-advanced-ping](https://github.com/emiloberg/node-red-contrib-advanced-ping) node. Difference is that the timeout and the number of requests is configurable.
 
 
 ## Install
 
 Run the following command in the root directory of your Node-RED install
 
-    npm install node-red-contrib-advanced-ping
+    npm install node-red-configurable-ping
 
 ## Usage
 
@@ -21,9 +21,5 @@ Run the following command in the root directory of your Node-RED install
   * Incoming `msg.payload` data will be outputted as `msg._payload` (as the new `msg.payload` will contain the result of the ping).
   * Incoming `msg.topic` data will be outputted as `msg._topic` (as the new `msg.topic` will contain the the host).
 
-## Fixed in this version
+## Changes over node-red-contrib-advanced-ping
 Ability to set ping options (timeout and number of requests). The defaults are still 5 seconds for timeout and only 1 ping request.
-
-* Linux: -n -w 5 -c 1
-* Windows: -n 1 -w 5000
-* Mac: -n -t 5 -c 1
