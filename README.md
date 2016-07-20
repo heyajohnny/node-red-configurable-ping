@@ -21,8 +21,8 @@ Run the following command in the root directory of your Node-RED install
   * Incoming `msg.payload` data will be outputted as `msg._payload` (as the new `msg.payload` will contain the result of the ping).
   * Incoming `msg.topic` data will be outputted as `msg._topic` (as the new `msg.topic` will contain the the host).
 
-## Todo
-Ability to set ping options in node configuration/by incomming message. Right now, these settings are hardcoded
+## Fixed in this version
+Ability to set ping options (timeout and number of requests). The defaults are still 5 seconds for timeout and only one request will be made.
 
 * Linux: -n -w 5 -c 1
 * Windows: -n 1 -w 5000
