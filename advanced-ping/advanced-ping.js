@@ -72,5 +72,5 @@ module.exports = function(RED) {
 		});
 
     }
-    RED.nodes.registerType("adv ping",PingNode);
+    RED.nodes.registerType("conf ping",PingNode);
 }
