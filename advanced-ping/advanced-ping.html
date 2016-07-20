@@ -19,7 +19,11 @@
     </div>
     <div class="form-row">
         <label for="node-input-timeout"><i class="fa fa-clock-o"></i> Timeout (S)</label>
-        <input type="text" id="node-input-timeout" placeholder="Name">
+        <input type="text" id="node-input-timeout" placeholder="5">
+    </div>
+    <div class="form-row">
+        <label for="node-input-number-of-requests"><i class="fa fa-refresh"></i> Number of requests</label>
+        <input type="text" id="node-input-number-of-requests" placeholder="1">
     </div>
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
@@ -40,7 +44,8 @@
         defaults: {
             name: {value:""},
             host: {value:""},
-            timeout: {value:"5", required:true, validate:RED.validators.number()}
+            timeout: {value:"5", required:true, validate:RED.validators.number()},
+            requests: {value:"1", required:true, validate:RED.validators.number()}
         },
         inputs:1,
         outputs:1,
