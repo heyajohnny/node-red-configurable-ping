@@ -22,4 +22,7 @@ Run the following command in the root directory of your Node-RED install
   * Incoming `msg.topic` data will be outputted as `msg._topic` (as the new `msg.topic` will contain the the host).
 
 ## Changes over node-red-contrib-advanced-ping
-Ability to set ping options (timeout and number of requests). The defaults are still 5 seconds for timeout and only 1 ping request.
+Ability to set ping options (timeout and number of requests). 
+The defaults are:
+* 5 seconds timeout 
+* 1 ping request
