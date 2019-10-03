@@ -42,7 +42,7 @@ module.exports = function(RED) {
 
 			var ex;
 			if (plat == "linux") { ex = spawn('ping', ['-n', '-w', node.timeout, '-c', node.requests, host]); }
-			else if (plat.match(/^win/)) { ex = spawn('ping', ['-n', node.requests, '-w', node.timeout*1000, host]); }
+			else if (plat.match(/^win/)) { ex = spawn('ping', ['-n', node.requests, '-w', node.timeout*1000, host],{windowsHide: true}); }
 			else if (plat == "darwin") { ex = spawn('ping', ['-n', '-t', node.timeout, '-c', node.requests, host]); }
 			else { node.error("Sorry - your platform - "+plat+" - is not recognised."); }
 			var res = false;
