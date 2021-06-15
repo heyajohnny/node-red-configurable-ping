@@ -1,6 +1,6 @@
 {
   "name": "node-red-configurable-ping",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node-RED node which takes input and pings a remote server.",
   "repository": {
     "type": "git",
